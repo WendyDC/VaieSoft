@@ -28,10 +28,11 @@
     <link href='../../css/jquery.iphone.toggle.css' rel='stylesheet'>
     <link href='../../css/uploadify.css' rel='stylesheet'>
     <link href='../../css/animate.min.css' rel='stylesheet'>
+    
 
     <!-- jQuery -->
     <script src="../../bower_components/jquery/jquery.min.js"></script>
-
+    <script src="../../js/ajax.js"></script>
     <link rel="shortcut icon" href="../../img/ufps.ico">
     
 </head>

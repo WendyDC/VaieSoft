@@ -138,6 +138,27 @@ $nombres="";
                         <br/><br/>
                         <label for="exampleInputEmail1">Email:<span title="Campo Obligatorio" style="color: red; font-size: 12pt;">*</span></label>
                         <input type="email" class="form-control" id="exampleInputEmail1" name="email" id="email" >
+                        <br/><br/>
+                        <label for="exampleInputEmail1">Area de conocimiento:<span title="Campo Obligatorio" style="color: red; font-size: 12pt;">*</span></label>
+                        <select name="idFacultad" id="idFacultad" data-rel="chosen" onchange="load(this.value)">
+                            <option value=""></option>
+                            <?php
+                            require "../../model/facultad.php";
+                            $fac = new facultad();
+                            $facultades=$fac->listaFacultad();
+                            foreach($facultades as $f): 
+                            echo '<option value="'.$f['id_facultad'].'">'.$f['nombre'].'</option>';
+                            endforeach;
+                            ?>
+                        </select>
+                        <br/><br/>
+                        <div id="divContenido">
+                        <label for="exampleInputEmail1">Disciplinas:<span title="Campo Obligatorio" style="color: red; font-size: 12pt;">*</span></label>                       
+                        <select name="idPlanEstudio" id="idPlanEstudio" data-rel="chosen">           
+                            <option value=""></option>                            
+                        </select>
+                        </div>   
+                       
                     </div><br/><br/>
                     <input class="btn btn-default" type="submit" name="boton" value="Enviar" />
                     
