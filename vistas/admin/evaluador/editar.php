@@ -11,7 +11,7 @@ $nombres="";
       echo "<script language=Javascript> location.href='../../index.php'; </script>";
    }
 
-require "../../model/evaluador.php";
+require "../../../model/evaluador.php";
 $eva=new evaluador();
 $id=$_GET['id'];
 $editar=$eva->buscarEvaluadorIdentificacion($id);
@@ -57,7 +57,7 @@ $editar=$eva->buscarEvaluadorIdentificacion($id);
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../controller/evaluador.php?opc=2";
+                document.getElementById("form1").action="../../../controller/evaluador.php?opc=2";
                 document.getElementById("form1").submit();  
      
               }

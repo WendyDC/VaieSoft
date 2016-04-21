@@ -97,6 +97,9 @@ $facul = new facultad();
                 <a href="../../controller/propuesta.php?opc=6&id='.$prop['id_propuesta'].'&e='.$prop['estado'].'">
                     <img alt="Desaprobar" title="Desaprobar" src="../../img/desaprobado.jpg" height="17" width="17"/>
                 </a>
+                <a href="../../controller/propuesta.php?opc=8&id='.$prop['id_propuesta'].'&e='.$prop['estado'].'">
+                    <img alt="Descargar" title="Descargar" src="../../img/descargar.png" height="17" width="17"/>
+                </a>
                 </td>
             </tr>';
         

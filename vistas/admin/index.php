@@ -8,7 +8,7 @@ $nombres="";
       $nombres=$_SESSION['usuario'];
       
    } else {
-      echo "<script language=Javascript> location.href='../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../index.php'; </script>";
    }
 ?>
 <div>

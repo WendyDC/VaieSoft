@@ -10,27 +10,37 @@
     <meta name="author" content="Muhammad Usman">
 
     <!-- The styles -->
-    <link id="bs-css" href="css/bootstrap-united.min.css" rel="stylesheet">
+    <link id="bs-css" href="vistas/css/bootstrap-united.min.css" rel="stylesheet">
 
-    <link href="css/charisma-app.css" rel="stylesheet">
-    <link href='bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
-    <link href='bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
-    <link href='bower_components/chosen/chosen.min.css' rel='stylesheet'>
-    <link href='bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
-    <link href='bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
-    <link href='bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
-    <link href='css/jquery.noty.css' rel='stylesheet'>
-    <link href='css/noty_theme_default.css' rel='stylesheet'>
-    <link href='css/elfinder.min.css' rel='stylesheet'>
-    <link href='css/elfinder.theme.css' rel='stylesheet'>
-    <link href='css/jquery.iphone.toggle.css' rel='stylesheet'>
-    <link href='css/uploadify.css' rel='stylesheet'>
-    <link href='css/animate.min.css' rel='stylesheet'>
+    <link href="vistas/css/charisma-app.css" rel="stylesheet">
+    <link href='vistas/bower_components/fullcalendar/dist/fullcalendar.css' rel='stylesheet'>
+    <link href='vistas/bower_components/fullcalendar/dist/fullcalendar.print.css' rel='stylesheet' media='print'>
+    <link href='vistas/bower_components/chosen/chosen.min.css' rel='stylesheet'>
+    <link href='vistas/bower_components/colorbox/example3/colorbox.css' rel='stylesheet'>
+    <link href='vistas/bower_components/responsive-tables/responsive-tables.css' rel='stylesheet'>
+    <link href='vistas/bower_components/bootstrap-tour/build/css/bootstrap-tour.min.css' rel='stylesheet'>
+    <link href='vistas/css/jquery.noty.css' rel='stylesheet'>
+    <link href='vistas/css/noty_theme_default.css' rel='stylesheet'>
+    <link href='vistas/css/elfinder.min.css' rel='stylesheet'>
+    <link href='vistas/css/elfinder.theme.css' rel='stylesheet'>
+    <link href='vistas/css/jquery.iphone.toggle.css' rel='stylesheet'>
+    <link href='vistas/css/uploadify.css' rel='stylesheet'>
+    <link href='vistas/css/animate.min.css' rel='stylesheet'>
+    
+     <!-- jQuery -->
+    <script src="vistas/bower_components/jquery/jquery.min.js"></script>
+    <!-- bootstrap -->
+     <script src="vistas/js/bootstrap-select.min.js"></script>
+     <script src="vistas/js/bootstrap-select.js.map"></script>
+     <script src="vistas/js/bootstrap-select.js"></script>
+     
+     <link href='vistas/css/bootstrap-select.css' rel='stylesheet'>
+     <link href='vistas/css/bootstrap-select.css.map' rel='stylesheet'>
+     <link href='vistas/css/bootstrap-select.min.css' rel='stylesheet'>
+ 
+   
 
-    <!-- jQuery -->
-    <script src="bower_components/jquery/jquery.min.js"></script>
-
-    <link rel="shortcut icon" href="img/ufps.ico">
+    <link rel="shortcut icon" href="vistas/img/ufps.ico">
 
     
     <script language="javascript">
@@ -62,7 +72,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"> <img alt="PROYECTOS FINU" src="img/banner2.jpg" />
+            <a class="navbar-brand" href="index.php"> <img alt="PROYECTOS FINU" src="vistas/img/banner2.jpg" />
                 </a>           
         </div>
     </div>
@@ -85,7 +95,8 @@
                         </li>
                         <li><a class="ajax-link" href="registrar.php"><i class="glyphicon glyphicon-user"></i><span> Registrarse</span></a>
                         </li>
-                        
+                        <li><a class="ajax-link" href="registrar_evaluador.php"><i class="glyphicon glyphicon-user"></i><span> Registrarse Par Evaluador</span></a>
+                        </li>
                     </ul>
                 </div>
             </div>

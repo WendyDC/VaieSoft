@@ -16,6 +16,12 @@ class InvestigadorProyecto {
     public function __construct() {
         $this->uno=1;
     }
+    
+    /**
+     * 
+     * @param type $invProyecto
+     * @return boolean
+     */
   public function agregarInvestigadorProyecto($invProyecto)
     {
         include 'conectar.php';

@@ -16,20 +16,20 @@ $nombres="";
       echo "<script language=Javascript> location.href='../index.php'; </script>";
    }
 
-require "../model/planEstudio.php";
+require "../model/PlanEstudio.php";
 
-$Plan = new planEstudio();
+$Plan = new PlanEstudio();
 
 $opcion=$_GET['opc'];
 
 if($opcion==1)//Agregar proyecto
 {
-   $planEstudio=array();
+    $planEstudio=array();
     $planEstudio[0]='';
     $planEstudio[1]=$_POST['nombre'];
     $planEstudio[2]=$_POST['id_facultad'];
      
-   if($Pro->agregarProyecto($proyecto)){
+   if($Plan->agregarProyecto($proyecto)){
       echo "<script> alert (\"Se registro el proyecto Correctamente.\"); </script>";
       
     }

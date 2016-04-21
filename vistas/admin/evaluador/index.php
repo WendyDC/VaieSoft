@@ -11,7 +11,7 @@ $nombres="";
       echo "<script language=Javascript> location.href='../../index.php'; </script>";
    }
 
-require "../../model/evaluador.php";
+require "../../../model/evaluador.php";
 $eva = new evaluador();
 $evaluadores=$eva->buscarEvaluadores();
 

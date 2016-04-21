@@ -31,11 +31,15 @@ if($opcion==1)//Agregar evaluador
     $evaluador[2]=$_POST['apellido'];
     $evaluador[3]=$_POST['telefono'];
     $evaluador[4]=$_POST['email'];
+    $evaluador[5]=$_POST['urlcvlac'];
+    $evaluador[6]=$_POST['disciplinas'];
 
     $evaluad=$eva->buscarEvaluadorPorCedula($evaluador[0]);
 
     if($evaluad['identificacion']==0){
       if($eva->agregarEvaluador($evaluador)){
+          
+          
        echo "<script> alert (\"Se registro el evaluador Correctamente.\"); </script>";
       }
       else{

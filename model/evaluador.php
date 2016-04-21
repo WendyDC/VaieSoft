@@ -12,6 +12,8 @@ class evaluador {
     public $apellido;    
     public $telefono;
     public $email;
+    public $urlclvac;
+    public $disciplinas;
     
     public function __construct() {        
     
@@ -95,8 +97,8 @@ public function buscarEvaluadores()
     public function agregarEvaluador($evaluador)
     {
         include 'conectar.php';
-        
-        $resultado = mysql_query("INSERT INTO `evaluador` (`identificacion`, `nombre`, `apellido`, `telefono`, `email`) VALUES ('".$evaluador[0]."', '".$evaluador[1]."', '".$evaluador[2]."', '".$evaluador[3]."', '".$evaluador[4]."');");
+       
+       $resultado = mysql_query("INSERT INTO `evaluador` (`identificacion`, `nombre`, `apellido`, `telefono`, `email`, `urlcvlac` ) VALUES ('".$evaluador[0]."', '".$evaluador[1]."', '".$evaluador[2]."', '".$evaluador[3]."', '".$evaluador[4]."', '".$evaluador[5]."');");
                 
         mysql_close();
         

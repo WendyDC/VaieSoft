@@ -32,7 +32,7 @@ if($usu->iniciarSesion($usuario, $clave))
 	    $_SESSION['rol'] = $i[0]['rol'];
       $_SESSION['id'] = $investigador['id_investigador'];
 
-    	echo "<script language=Javascript> location.href=\"../".$i[0]['rol']."/index.php\"; </script>";
+    	echo "<script language=Javascript> location.href=\"../vistas/".$i[0]['rol']."/index.php\"; </script>";
     }
    else{
    	
