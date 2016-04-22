@@ -158,8 +158,8 @@ $ano_lectivos=$ano_lectivo->listaAnoLectivo();
                         <br/><br/>
                         <label class="control-label" for="inputSuccess4">Estado:<span title="Campo Obligatorio" style="color: red; font-size: 12pt;">*</span></label>                        
                         <select name="estado" id="estado" style="width:230px"  data-rel="chosen">
-                          <option value="ACTIVO"  <?phpif ($editar['estado'] == 'ACTIVO'){echo ' selected ';} ?> >ACTIVO</option>
-                          <option value="INACTIVO" <?phpif ($editar['estado'] == 'INACTIVO'){echo ' selected ';} ?> >INACTIVO</option>
+                          <option value="ACTIVO"  <?php if ($editar['estado'] == 'ACTIVO'){echo ' selected ';} ?> >ACTIVO</option>
+                          <option value="INACTIVO" <?php if ($editar['estado'] == 'INACTIVO'){echo ' selected ';} ?> >INACTIVO</option>
                         </select>
                     </div><br/><br/>
                     <input class="btn btn-default" type="submit" name="boton" value="Actualizar" />                    
