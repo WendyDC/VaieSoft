@@ -8,20 +8,20 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/Proyecto.php";
+require "../../../model/Proyecto.php";
 $proy = new Proyecto();
 $proyectos=$proy->listarProyectos();
 
-require "../../model/convocatoria.php";
+require "../../../model/convocatoria.php";
 $con = new convocatoria();
 
-require "../../model/grupo.php";
+require "../../../model/grupo.php";
 $gr = new grupo();
 
-require "../../model/facultad.php";
+require "../../../model/facultad.php";
 $facul = new facultad();
 
 
@@ -89,7 +89,7 @@ $facul = new facultad();
                 <a href="eliminar.php?id='.$proy['id_proyecto'].'">
                     <img alt="Eliminar" title="Eliminar" src="../../img/eliminar.png" height="18" width="18"/>
                 </a>
-                 <a href="../../controller/proyectoRubro.php?opc=4&id='.$proy['id_proyecto'].'">
+                 <a href="../../../controller/proyectoRubro.php?opc=4&id='.$proy['id_proyecto'].'">
                     <img alt="Rubros" title="Rubros" src="../../img/rubro.jpg" height="19" width="19"/>
                 </a>
                 <a href="producto/index.php?id='.$proy['id_proyecto'].'">

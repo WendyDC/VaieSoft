@@ -8,15 +8,15 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/Proyecto.php";
-require "../../model/convocatoria.php";
-require "../../model/facultad.php";
-require "../../model/grupo.php";
-require "../../model/Investigador.php";
-require "../../model/evaluador.php";
+require "../../../model/Proyecto.php";
+require "../../../model/convocatoria.php";
+require "../../../model/facultad.php";
+require "../../../model/grupo.php";
+require "../../../model/Investigador.php";
+require "../../../model/evaluador.php";
 
 $Pro=new Proyecto();
 $id=$_GET['id'];

@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../../index.php'; </script>";
    }
 
-require "../../../../model/consultoria.php";
+require "../../../../../model/consultoria.php";
 $con = new consultoria();
 $id=$_GET['id'];
 

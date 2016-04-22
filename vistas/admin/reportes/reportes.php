@@ -1,5 +1,5 @@
 <?php 
-require('../lib/pdf/fpdf.php');
+require('../../../lib/pdf/fpdf.php');
 //$pdf = new FPDF();
 #Creamos el objeto pdf (con medidas en milímetros): 
 $pdf = new FPDF('P', 'mm', 'A4'); 
@@ -26,7 +26,7 @@ $pdf->Cell(80,6, utf8_decode('Año Lectivo'),1,0,'C',1);
 $pdf->Cell(80,6,'Cantidad de Proyectos',1,0,'C',1); 
 $pdf->Ln(5);
 
-include '../model/conectar.php';
+include '../../../model/conectar.php';
 $resultado = mysql_query("SELECT anle.id_anle as ano_lectivo, COUNT(conv.ano_lectivo) as cantidad FROM ano_lectivo anle 
             LEFT JOIN  `convocatoria` conv  ON (conv.ano_lectivo = anle.id_anle) 
             LEFT JOIN  proyecto proy ON (proy.convocatoria = conv.id_convocatoria) 

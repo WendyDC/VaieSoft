@@ -8,13 +8,13 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
-require "../../../model/Proyecto.php";
-require "../../../model/ProyectoRubro.php";
-require "../../../model/ProyectoContrapartida.php";
-require "../../../model/contrapartida.php";
-require "../../../model/movimientoRubro.php";
+require "../../../../model/Proyecto.php";
+require "../../../../model/ProyectoRubro.php";
+require "../../../../model/ProyectoContrapartida.php";
+require "../../../../model/contrapartida.php";
+require "../../../../model/movimientoRubro.php";
 
 $proy=new Proyecto();
 $proyRubro=new ProyectoRubro();
@@ -148,7 +148,7 @@ $totales[] = $proyecto['presupuesto'];
                 <a href="retiro.php?id='.$f['id_pru'].'">
                     <img alt="Retiro" title="Retiro" src="../../../img/retiro.jpg" height="18" width="18"/>
                 </a>
-                <a href="../../../controller/movimientoRubro.php?opc=3&id_pru='.$f['id_pru'].'&id='.$id.'">
+                <a href="../../../../controller/movimientoRubro.php?opc=3&id_pru='.$f['id_pru'].'&id='.$id.'">
                     <img alt="Movimiento" title="Movimiento" src="../../../img/movimiento.jpg" height="20" width="20"/>
                 </a>
                 </td>

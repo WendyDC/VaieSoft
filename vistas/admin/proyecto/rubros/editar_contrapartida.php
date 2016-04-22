@@ -8,11 +8,11 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/contrapartida.php";
-require "../../../model/ProyectoContrapartida.php";
+require "../../../../model/contrapartida.php";
+require "../../../../model/ProyectoContrapartida.php";
 
 $proyContrapartida=new ProyectoContrapartida();
 $cont=new contrapartida();
@@ -89,7 +89,7 @@ $contrapartida=$proyContrapartida->buscarProyectoContrapartida($id_pru);
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="form1" id="form1" action="../../../controller/ProyectoContrapartida.php?opc=2">
+                <form class="form-inline" role="form" method="post" name="form1" id="form1" action="../../../../controller/ProyectoContrapartida.php?opc=2">
                     <div class="form-group">
                       <input name="id_proyecto" type="hidden" id="id_proyecto" value="<?php echo $contrapartida['id_proyecto']?>"/>
                       <input name="id_pru" type="hidden" id="id_pru" value="<?php echo $id_pru?>"/>

@@ -41,7 +41,7 @@ if($opcion==1)//Agregar libro
       echo "<script> alert (\"No se pudo registrar el libro. Ya existe en el Sistema. \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/libro/index.php?id=$libro[0]\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/libro/index.php?id=$libro[0]\"; </script>";         
 
     
 die();
@@ -65,7 +65,7 @@ if($opcion==2)//Editar libro
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del libro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/libro/index.php?id=$libro[0]\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/libro/index.php?id=$libro[0]\"; </script>";
 die();
 }
 
@@ -78,7 +78,7 @@ if($opcion==3)//Eliminar libro
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del libro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/libro/index.php?id=$libro['id_proyecto']\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/libro/index.php?id=$libro['id_proyecto']\"; </script>";
 die();
 }
 

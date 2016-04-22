@@ -36,7 +36,7 @@ if($opcion==1)//Agregar facultad
       echo "<script> alert (\"No se pudo registrar la facultad. Ya existe en el Sistema \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/facultad\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/facultad\"; </script>";         
 
     
 die();
@@ -54,7 +54,7 @@ if($opcion==2)//Editar facultad
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion de la facultad.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/facultad\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/facultad\"; </script>";
 die();
 }
 
@@ -66,7 +66,7 @@ if($opcion==3)//Eliminar facultad
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion de la facultad.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/facultad\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/facultad\"; </script>";
 die();
 }
 

@@ -8,16 +8,16 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../model/articulo.php";
+require "../../../../model/articulo.php";
 $art = new articulo();
 
-require "../../model/libro.php";
+require "../../../../model/libro.php";
 $lib = new libro();
 
-require "../../model/capitulo_libro.php";
+require "../../../../model/capitulo_libro.php";
 $cap = new capitulo_libro();
 
 $id_proyecto=$_GET['id'];

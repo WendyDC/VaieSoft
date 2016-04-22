@@ -8,11 +8,11 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/ProyectoRubro.php";
-require "../../../model/contrapartida.php"; 
+require "../../../../model/ProyectoRubro.php";
+require "../../../../model/contrapartida.php"; 
 
 $rubro=new ProyectoRubro();
 $cont = new contrapartida();
@@ -34,7 +34,7 @@ $valor_disponible = $editar['valor'] - $editar['valor_disponible'];
             }
             
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../../controller/proyectoRubro.php?opc=2";
+                document.getElementById("form1").action="../../../../controller/proyectoRubro.php?opc=2";
                 document.getElementById("form1").submit();       
               }
         }

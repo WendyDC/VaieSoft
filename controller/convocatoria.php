@@ -41,7 +41,7 @@ if($opcion==1)//Agregar convocatoria
       echo "<script> alert (\"No se pudo registrar la convocatoria. Ya existe en el Sistema \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/convocatoria\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/convocatoria\"; </script>";         
 
     
 die();
@@ -63,7 +63,7 @@ if($opcion==2)//Editar convocatoria
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion de la convocatoria.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/convocatoria\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/convocatoria\"; </script>";
 die();
 }
 
@@ -75,7 +75,7 @@ if($opcion==3)//Eliminar convocatoria
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion de la convocatoria.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/convocatoria\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/convocatoria\"; </script>";
 die();
 }
 

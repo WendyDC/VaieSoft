@@ -50,7 +50,7 @@ if($opcion==1)//Retiro Rubro
       echo "<script> alert (\"No se pudo registrar el retiro.  \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$movimientoRubro[0]\"; </script>";               
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$movimientoRubro[0]\"; </script>";               
 
 die();
 }
@@ -84,7 +84,7 @@ if($opcion==2)//Movimiento Rubro
       echo "<script> alert (\"No se pudo registrar el retiro.  \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$movimientoRubro[0]\"; </script>";               
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$movimientoRubro[0]\"; </script>";               
 
 die();
 }
@@ -106,11 +106,11 @@ if($opcion==3)
 
     if($total>$valor){
       $cntMov = $total-$valor;
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/movimiento.php?id=$id_pru&cant_mov=$cntMov\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/movimiento.php?id=$id_pru&cant_mov=$cntMov\"; </script>";
     }
     else{
       echo "<script> alert (\"No se puede realizar movimientos.\"); </script>";
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$id_proyecto\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$id_proyecto\"; </script>";
     }
       
 die();

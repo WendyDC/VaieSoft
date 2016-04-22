@@ -78,7 +78,7 @@ if($opcion==1)//Agregar propuesta
       
     }
     if($rol == "admin"){
-        echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";         
+        echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";         
     }
     else{
         echo "<script language=Javascript> location.href=\"../".$rol."/propuesta/index.php?id=".$id."\"; </script>";         
@@ -130,7 +130,7 @@ if($opcion==2)//Editar propuesta Admin
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion de la propuesta.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
 die();
 }
 
@@ -142,7 +142,7 @@ if($opcion==3)//Eliminar propuesta
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion de la propuesta.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
 die();
 }
 
@@ -153,10 +153,10 @@ if($opcion==4)//Aprobada propuesta
 
     if($estado=='APROBADA'){
         echo "<script> alert (\"La propuesta ya ha sido Aprobada.\"); </script>";
-        echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+        echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
     }
     else if(($estado=='PENDIENTE') || ($estado=='DESAPROBADA')){
-        echo "<script language=Javascript> location.href=\"../admin/propuesta/aprobada.php?id=$id_propuesta\"; </script>";
+        echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/aprobada.php?id=$id_propuesta\"; </script>";
     }
 
 die();
@@ -205,7 +205,7 @@ if($opcion==5)//Agregar propuesta aprobada
    else{
      echo "<script> alert (\"No se pudo registrar el proyecto. Ya existe en el Sistema. \"); </script>";      
    }
-    echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";         
     
 die();
 }
@@ -217,11 +217,11 @@ if($opcion==6)//Desaprobada propuesta
 
     if($estado=='DESAPROBADA'){
         echo "<script> alert (\"La propuesta ya ha sido Desaprobada.\"); </script>";
-        echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+        echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
     }
     else if($estado=='PENDIENTE'){
         if($Pro->editarEstado($id_propuesta, 'DESAPROBADA')){
-            echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+            echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
         }  
     }
     else if($estado=='APROBADA'){
@@ -230,7 +230,7 @@ if($opcion==6)//Desaprobada propuesta
             if($proRubro->eliminarProyectoRubroPorProyecto($proyecto['id_proyecto']));
             if($movRubro->eliminarMovimientoRubroPorProyecto($proyecto['id_proyecto']));
             if($Pro->editarEstado($id_propuesta, 'DESAPROBADA')){
-                echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+                echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
             }      
         }
    }
@@ -296,7 +296,7 @@ if($opcion==8)//Descargar
         else{
             echo "<script> alert (\"Error. No se encontro ningun archivo.\"); </script>";
         }
-    echo "<script language=Javascript> location.href=\"../admin/propuesta\"; </script>";
+    echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta\"; </script>";
    
 
 die();

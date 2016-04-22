@@ -8,9 +8,9 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../../index.php'; </script>";
    }
-require "../../../../model/capitulo_libro.php";
+require "../../../../../model/capitulo_libro.php";
 
 $lib=new capitulo_libro();
 $id=$_GET['id'];

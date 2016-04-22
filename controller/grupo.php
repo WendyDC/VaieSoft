@@ -37,7 +37,7 @@ if($opcion==1)//Agregar grupo
       echo "<script> alert (\"No se pudo registrar el grupo. Ya existe en el Sistema \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/grupo\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/grupo\"; </script>";         
 
     
 die();
@@ -57,7 +57,7 @@ if($opcion==2)//Editar grupo
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del grupo.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/grupo\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/grupo\"; </script>";
 die();
 }
 
@@ -69,7 +69,7 @@ if($opcion==3)//Eliminar grupo
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del grupo.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/grupo\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/grupo\"; </script>";
 die();
 }
 

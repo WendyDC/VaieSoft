@@ -50,7 +50,7 @@ if($opcion==1)//Agregar evaluador
       echo "<script> alert (\"No se pudo registrar el evaluador. Ya existe en el Sistema \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/evaluador\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/evaluador\"; </script>";         
 
     
 die();
@@ -72,7 +72,7 @@ if($opcion==2)//Editar evaluador
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del evaluador.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/evaluador\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/evaluador\"; </script>";
 die();
 }
 
@@ -84,7 +84,7 @@ if($opcion==3)//Eliminar evaluador
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del evaluador.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/evaluador\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/evaluador\"; </script>";
 die();
 }
 

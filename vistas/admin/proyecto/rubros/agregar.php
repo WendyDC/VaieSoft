@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/contrapartida.php";
+require "../../../../model/contrapartida.php";
 
 $cont=new contrapartida();
 $id_proyecto=$_GET['id'];
@@ -31,7 +31,7 @@ $contrapartida=$cont->listaContrapartidaDisponibles($id_proyecto);
             }
                
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../../controller/proyectoRubro.php?opc=5";
+                document.getElementById("form1").action="../../../../controller/proyectoRubro.php?opc=5";
                 document.getElementById("form1").submit();  
      
               }

@@ -37,7 +37,7 @@ if($opcion==1)//Agregar contrapartida
       echo "<script> alert (\"No se pudo registrar el rubro. Ya existe en el Sistema \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/rubro/index.php\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/rubro/index.php\"; </script>";         
 
     
 die();
@@ -56,7 +56,7 @@ if($opcion==2)//Editar contrapartida
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del rubro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/rubro/index.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/rubro/index.php\"; </script>";
 die();
 }
 
@@ -68,7 +68,7 @@ if($opcion==3)//Eliminar contrapartida
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del rubro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/rubro/index.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/rubro/index.php\"; </script>";
 die();
 }
 

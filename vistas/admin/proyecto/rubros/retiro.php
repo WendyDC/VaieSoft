@@ -8,11 +8,11 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/ProyectoRubro.php";
-require "../../../model/contrapartida.php"; 
+require "../../../../model/ProyectoRubro.php";
+require "../../../../model/contrapartida.php"; 
 
 $rubro=new ProyectoRubro();
 $cont = new contrapartida();
@@ -33,7 +33,7 @@ $editar=$rubro->buscarProyectoRubro($id);
             }
             
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../../controller/movimientoRubro.php?opc=1";
+                document.getElementById("form1").action="../../../../controller/movimientoRubro.php?opc=1";
                 document.getElementById("form1").submit();       
               }
         }

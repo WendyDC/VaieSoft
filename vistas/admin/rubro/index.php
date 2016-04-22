@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/contrapartida.php";
+require "../../../model/contrapartida.php";
 $con = new contrapartida();
 $contrapartidas=$con->listaContrapartida();
 

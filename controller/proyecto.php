@@ -63,7 +63,7 @@ if($opcion==1)//Agregar proyecto
       echo "<script> alert (\"No se pudo registrar el proyecto. Ya existe en el Sistema. \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto\"; </script>";         
 
     
 die();
@@ -104,7 +104,7 @@ if($opcion==2)//Editar proyecto
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del proyecto.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto\"; </script>";
 die();
 }
 
@@ -116,7 +116,7 @@ if($opcion==3)//Eliminar proyecto
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del proyecto.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto\"; </script>";
 die();
 }
 

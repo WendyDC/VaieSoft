@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../../index.php'; </script>";
    }
 $id_proyecto=$_GET['id'];
-require "../../../../model/ano_lectivo.php";
+require "../../../../../model/ano_lectivo.php";
 $anle = new ano_lectivo();
 $ano_lectivo=$anle->listaAnoLectivo();
 
@@ -122,7 +122,7 @@ $ano_lectivo=$anle->listaAnoLectivo();
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../controller/software.php?opc=1" onSubmit="return validar(this)">
+                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../../controller/software.php?opc=1" onSubmit="return validar(this)">
                     <div class="form-group">
                         <br/>
                         <input name="id_proyecto" type="hidden" value="<?php echo $id_proyecto?>"/>

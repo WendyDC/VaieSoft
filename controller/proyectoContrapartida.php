@@ -50,7 +50,7 @@ if($opcion==1)//Agregar ProyectoContrapartida Rubro
 
       if($proContrapartida->agregarProyectoContrapartida($ProyectoContrapartida)){
         echo "<script> alert (\"Se registro la contrapartida correctamente.  \"); </script>";
-        echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$ProyectoContrapartida[0]\"; </script>";
+        echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$ProyectoContrapartida[0]\"; </script>";
       }    
     
       die();
@@ -84,7 +84,7 @@ if($opcion==2)//Editar ProyectoContrapartida
       else{
         echo "<script> alert (\"Error.. No se actualizo la contrapartida correctamente.  \"); </script>";
       }
-       echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$ProyectoContrapartida[0]\"; </script>";
+       echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$ProyectoContrapartida[0]\"; </script>";
       
     
       die();
@@ -99,7 +99,7 @@ if($opcion==3)//Eliminar ProyectoContrapartida
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del ProyectoContrapartida.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/ProyectoContrapartida.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/ProyectoContrapartida.php\"; </script>";
 die();
 }
 
@@ -107,9 +107,9 @@ if($opcion==4)//rubros ProyectoContrapartida
 {
     $id = $_GET['id'];
     if($proContrapartida->ExistenRubrosPorProyecto($id))
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$id\"; </script>";
     else
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/agregar.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/agregar.php?id=$id\"; </script>";
     
 die();
 }

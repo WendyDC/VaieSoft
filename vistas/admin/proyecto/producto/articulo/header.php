@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../../../../index.php"> <img alt="PROYECTOS FINU" src="../../../../img/banner2.jpg" />
+            <a class="navbar-brand" href="../../../../../index.php"> <img alt="PROYECTOS FINU" src="../../../../img/banner2.jpg" />
                 </a>           
         </div>
     </div>

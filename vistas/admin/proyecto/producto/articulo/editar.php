@@ -8,12 +8,12 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../../index.php'; </script>";
    }
 
-require "../../../../model/articulo.php";
-require "../../../../model/ano_lectivo.php";
-require "../../../../model/mes.php";
+require "../../../../../model/articulo.php";
+require "../../../../../model/ano_lectivo.php";
+require "../../../../../model/mes.php";
 
 $art=new articulo();
 $id=$_GET['id'];
@@ -162,7 +162,7 @@ $meses=$mes->listaMes();
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../controller/articulo.php?opc=2" onSubmit="return validar(this)" >
+                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../../controller/articulo.php?opc=2" onSubmit="return validar(this)" >
                     <div class="form-group">
                         <br/>
                               <input name="id_articulo" type="hidden" value="<?php echo $editar['id_articulo']?>"/>

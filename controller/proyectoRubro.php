@@ -45,7 +45,7 @@ if($opcion==1)//Agregar proyectoRubro Rubro
           if($i==($cantidad)){
             if($Pro->editarPresupuesto($proyectoRubro[0], $suma)){
               echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-              echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$proyectoRubro[0]\"; </script>";
+              echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$proyectoRubro[0]\"; </script>";
             }            
           }
       }     
@@ -82,7 +82,7 @@ if($opcion==2)//Editar proyectoRubro
       echo "<script> alert (\"Error. No se permite actualizar la informacion del rubro.\"); </script>";
     }      
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$id_proyecto\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$id_proyecto\"; </script>";
 die();
 }
 
@@ -94,7 +94,7 @@ if($opcion==3)//Eliminar proyectoRubro
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del proyectoRubro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyectoRubro.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyectoRubro.php\"; </script>";
 die();
 }
 
@@ -102,9 +102,9 @@ if($opcion==4)//rubros proyectoRubro
 {
     $id = $_GET['id'];
     if($proRubro->ExistenRubrosPorProyecto($id))
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$id\"; </script>";
     else
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/agregarRub.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/agregarRub.php?id=$id\"; </script>";
     
 die();
 }
@@ -125,7 +125,7 @@ if($opcion==5)//Agregar un Rubro al proyecto
             
     if($Pro->editarPresupuesto($proyectoRubro[0], $suma)){
       echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-      echo "<script language=Javascript> location.href=\"../admin/proyecto/rubros/index.php?id=$proyectoRubro[0]\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/rubros/index.php?id=$proyectoRubro[0]\"; </script>";
     }            
          
     die();

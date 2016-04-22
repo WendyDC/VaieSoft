@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/contrapartida.php";
+require "../../../../model/contrapartida.php";
 
 $cont=new contrapartida();
 $id_proyecto=$_GET['id'];
@@ -87,7 +87,7 @@ $contrapartida=$cont->listaContrapartidaActiva();
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="form1" id="form1" action="../../../controller/proyectoContrapartida.php?opc=1">
+                <form class="form-inline" role="form" method="post" name="form1" id="form1" action="../../../../controller/proyectoContrapartida.php?opc=1">
                     <div class="form-group">
                       <input name="id_proyecto" type="hidden" id="id_proyecto" value="<?php echo $id_proyecto?>"/>
                       <label class="control-label" for="inputSuccess4">Nombre de la Contrapartida:<span title="Campo Obligatorio" style="color: red; font-size: 12pt;">*</span></label>

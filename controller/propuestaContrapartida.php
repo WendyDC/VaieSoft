@@ -57,7 +57,7 @@ if($opcion==1)//Agregar PropuestaContrapartida Rubro
         if($rol == "investigador"){
           echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]&inv=$id_investigador\"; </script>";
         }else{
-          echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]\"; </script>";
+          echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]\"; </script>";
         }
         
       }    
@@ -100,7 +100,7 @@ if($opcion==2)//Editar PropuestaContrapartida
       if($rol == "investigador"){
         echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]&inv=$id_investigador\"; </script>";
       }else{
-        echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]\"; </script>";
+        echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]\"; </script>";
       }
        
       
@@ -117,7 +117,7 @@ if($opcion==3)//Eliminar PropuestaContrapartida
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del PropuestaContrapartida.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/PropuestaContrapartida.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/PropuestaContrapartida.php\"; </script>";
 die();
 }
 
@@ -125,9 +125,9 @@ if($opcion==4)//rubros PropuestaContrapartida
 {
     $id = $_GET['id'];
     if($proContrapartida->ExistenRubrosPorPropuesta($id))
-      echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$id\"; </script>";
     else
-      echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/agregar.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/agregar.php?id=$id\"; </script>";
     
 die();
 }
@@ -148,7 +148,7 @@ if($opcion==5)//Agregar un Rubro al Propuesta
             
     if($Pro->editarPresupuesto($PropuestaContrapartida[0], $suma)){
       echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-      echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$PropuestaContrapartida[0]\"; </script>";
     }            
          
     die();

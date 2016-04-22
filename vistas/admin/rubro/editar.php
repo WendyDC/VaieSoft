@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
    
-require "../../model/contrapartida.php";
+require "../../../model/contrapartida.php";
 $con=new contrapartida();
 $id=$_GET['id'];
 $editar=$con->buscarContrapartida($id);
@@ -30,7 +30,7 @@ $editar=$con->buscarContrapartida($id);
             }
           
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../controller/contrapartida.php?opc=2";
+                document.getElementById("form1").action="../../../controller/contrapartida.php?opc=2";
                 document.getElementById("form1").submit();  
      
               }

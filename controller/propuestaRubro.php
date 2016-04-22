@@ -49,7 +49,7 @@ if($opcion==1)//Agregar PropuestaRubro Rubro
           if($i==($cantidad)){
             if($Pro->editarPresupuesto($PropuestaRubro[0], $suma)){
               echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-              echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$PropuestaRubro[0]\"; </script>";
+              echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$PropuestaRubro[0]\"; </script>";
             }            
           }
       }     
@@ -84,7 +84,7 @@ if($opcion==2)//Editar PropuestaRubro
       echo "<script> alert (\"Error. No se permite actualizar la informacion del rubro.\"); </script>";
     }      
     
-echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$id_propuesta\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$id_propuesta\"; </script>";
 die();
 }
 
@@ -96,7 +96,7 @@ if($opcion==3)//Eliminar PropuestaRubro
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del PropuestaRubro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/PropuestaRubro.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/PropuestaRubro.php\"; </script>";
 die();
 }
 
@@ -104,9 +104,9 @@ if($opcion==4)//rubros PropuestaRubro
 {
     $id = $_GET['id'];
     if($proRubro->ExistenRubrosPorPropuesta($id))
-      echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$id\"; </script>";
     else
-      echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/agregar.php?id=$id\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/agregar.php?id=$id\"; </script>";
     
 die();
 }
@@ -127,7 +127,7 @@ if($opcion==5)//Agregar un Rubro al Propuesta
             
     if($Pro->editarPresupuesto($PropuestaRubro[0], $suma)){
       echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-      echo "<script language=Javascript> location.href=\"../admin/propuesta/rubros/index.php?id=$PropuestaRubro[0]\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/admin/propuesta/rubros/index.php?id=$PropuestaRubro[0]\"; </script>";
     }            
          
     die();
@@ -159,7 +159,7 @@ if($opcion==1)//Agregar PropuestaRubro Rubro
           if($i==($cantidad)){
             if($Pro->editarPresupuesto($PropuestaRubro[0], $suma)){
               echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-              echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/index.php?id=$PropuestaRubro[0]&inv=$id_investigador\"; </script>";
+              echo "<script language=Javascript> location.href=\"../vistas/investigador/propuesta/rubros/index.php?id=$PropuestaRubro[0]&inv=$id_investigador\"; </script>";
             }            
           }
       }     
@@ -196,7 +196,7 @@ if($opcion==2)//Editar PropuestaRubro
       echo "<script> alert (\"Error. No se permite actualizar la informacion del rubro.\"); </script>";
     }      
     
-echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/index.php?id=$id_propuesta&inv=$id_investigador\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/investigador/propuesta/rubros/index.php?id=$id_propuesta&inv=$id_investigador\"; </script>";
 die();
 }
 
@@ -208,7 +208,7 @@ if($opcion==3)//Eliminar PropuestaRubro
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del PropuestaRubro.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/PropuestaRubro.php\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/PropuestaRubro.php\"; </script>";
 die();
 }
 
@@ -216,9 +216,9 @@ if($opcion==4)//rubros PropuestaRubro
 {
     $id = $_GET['id'];
     if($proRubro->ExistenRubrosPorPropuesta($id))
-      echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/index.php?id=$id&inv=$id_investigador\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/investigador/propuesta/rubros/index.php?id=$id&inv=$id_investigador\"; </script>";
     else
-      echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/agregar.php?id=$id&inv=$id_investigador\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/investigador/propuesta/rubros/agregar.php?id=$id&inv=$id_investigador\"; </script>";
     
 die();
 }
@@ -239,7 +239,7 @@ if($opcion==5)//Agregar un Rubro al Propuesta
             
     if($Pro->editarPresupuesto($PropuestaRubro[0], $suma)){
       echo "<script> alert (\"Se registro el rubro Correctamente.  $suma\"); </script>";
-      echo "<script language=Javascript> location.href=\"../investigador/propuesta/rubros/index.php?id=$PropuestaRubro[0]&inv=$id_investigador\"; </script>";
+      echo "<script language=Javascript> location.href=\"../vistas/investigador/propuesta/rubros/index.php?id=$PropuestaRubro[0]&inv=$id_investigador\"; </script>";
     }            
          
     die();

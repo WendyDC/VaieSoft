@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../../../index.php"> <img alt="PROYECTOS FINU" src="../../../img/banner2.jpg" />
+            <a class="navbar-brand" href="../../../../index.php"> <img alt="PROYECTOS FINU" src="../../../img/banner2.jpg" />
                 </a>           
         </div>
     </div>
@@ -87,7 +87,7 @@
                                     class="glyphicon glyphicon-usd"></i><span> Rubro</span></a></li>
                         <li><a class="ajax-link" href="../../reportes"><i
                                     class="glyphicon glyphicon-file"></i><span> Reportes</span></a></li>
-                        <li><a class="ajax-link" href="../../../controller/cerrarsesion.php"><i
+                        <li><a class="ajax-link" href="../../../../controller/cerrarsesion.php"><i
                                     class="glyphicon glyphicon-log-out"></i><span> Cerrar Sesi&oacute;n</span></a></li>
                     </ul>
                 </div>

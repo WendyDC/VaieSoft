@@ -38,7 +38,7 @@ if($opcion==1)//Agregar consultoria
       echo "<script> alert (\"No se pudo registrar la consultoria. Ya existe en el Sistema. \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/consultoria/index.php?id=$consultoria[0]\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/consultoria/index.php?id=$consultoria[0]\"; </script>";         
 
     
 die();
@@ -59,7 +59,7 @@ if($opcion==2)//Editar consultoria
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion de la consultoria.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/consultoria/index.php?id=$consultoria[0]\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/consultoria/index.php?id=$consultoria[0]\"; </script>";
 die();
 }
 
@@ -72,7 +72,7 @@ if($opcion==3)//Eliminar consultoria
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion de la consultoria.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/consultoria/index.php?id=$consultoria['id_proyecto']\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/consultoria/index.php?id=$consultoria['id_proyecto']\"; </script>";
 die();
 }
 

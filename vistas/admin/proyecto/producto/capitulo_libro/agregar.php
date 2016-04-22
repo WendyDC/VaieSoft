@@ -8,7 +8,7 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../../index.php'; </script>";
    }
 $id_proyecto=$_GET['id'];
 
@@ -140,7 +140,7 @@ $id_proyecto=$_GET['id'];
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../controller/capitulo_libro.php?opc=1" onSubmit="return validar(this)">
+                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../../controller/capitulo_libro.php?opc=1" onSubmit="return validar(this)">
                     <div class="form-group">
                         <br/>
                         <input name="id_proyecto" type="hidden" value="<?php echo $id_proyecto?>"/>

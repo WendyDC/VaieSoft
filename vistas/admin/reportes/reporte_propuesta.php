@@ -104,31 +104,31 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
-require "../../model/Propuesta.php";
+require "../../../model/Propuesta.php";
 $prop = new Propuesta();
 $propuestas=$prop->listarPropuesta();
 
-require "../../model/convocatoria.php";
+require "../../../model/convocatoria.php";
 $con = new convocatoria();
 
-require "../../model/grupo.php";
+require "../../../model/grupo.php";
 $gr = new grupo();
 
-require "../../model/facultad.php";
+require "../../../model/facultad.php";
 $facul = new facultad();
 
-require "../../model/Investigador.php";
+require "../../../model/Investigador.php";
 $invedit=new Investigador();
 
-require "../../model/evaluador.php";
+require "../../../model/evaluador.php";
 $eva=new evaluador();
 
-require "../../model/PropuestaRubro.php";
+require "../../../model/PropuestaRubro.php";
 $proyRubro=new PropuestaRubro();
 
-require "../../model/contrapartida.php";
+require "../../../model/contrapartida.php";
 $cont = new contrapartida();
 
 ?>
@@ -144,7 +144,7 @@ $cont = new contrapartida();
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../../index.php"> <img alt="PROYECTOS FINU" src="../../img/banner2.jpg" />
+            <a class="navbar-brand" href="../../../index.php"> <img alt="PROYECTOS FINU" src="../../img/banner2.jpg" />
                 </a>           
         </div>
     </div>
@@ -183,7 +183,7 @@ $cont = new contrapartida();
                                     class="glyphicon glyphicon-usd"></i><span> Rubro</span></a></li>
                         <li><a class="ajax-link" href="../reportes"><i
                                     class="glyphicon glyphicon-file"></i><span> Reportes</span></a></li>
-                        <li><a class="ajax-link" href="../../controller/cerrarsesion.php"><i
+                        <li><a class="ajax-link" href="../../../controller/cerrarsesion.php"><i
                                     class="glyphicon glyphicon-log-out"></i><span> Cerrar Sesi&oacute;n</span></a></li>
                     </ul>
                 </div>

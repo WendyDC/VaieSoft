@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../../index.php'; </script>";
    }
 
-require "../../../../model/libro.php";
+require "../../../../../model/libro.php";
 
 $lib=new libro();
 $id=$_GET['id'];
@@ -119,7 +119,7 @@ $editar=$lib->buscarLibro($id);
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../controller/libro.php?opc=2" onSubmit="return validar(this)" >
+                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../../../controller/libro.php?opc=2" onSubmit="return validar(this)" >
                     <div class="form-group">
                         <br/>
                         <input name="id_libro" type="hidden" value="<?php echo $id?>"/>
