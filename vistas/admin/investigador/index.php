@@ -11,7 +11,7 @@ $nombres="";
       echo "<script language=Javascript> location.href='../../index.php'; </script>";
    }
 
-require "../../model/Investigador.php";
+require "../../../model/Investigador.php";
 $Inv = new Investigador();
 $investigadores=$Inv->buscarInvestigadores();
 

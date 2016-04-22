@@ -11,7 +11,7 @@ $nombres="";
       echo "<script language=Javascript> location.href='../index.php'; </script>";
    }
 
-require "../../model/facultad.php";
+require "../../../model/facultad.php";
 $fac=new facultad();
 $id=$_GET['id'];
 $editar=$fac->buscarFacultad($id);
@@ -30,7 +30,7 @@ $editar=$fac->buscarFacultad($id);
             }
           
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../controller/facultad.php?opc=2";
+                document.getElementById("form1").action="../../../controller/facultad.php?opc=2";
                 document.getElementById("form1").submit();  
      
               }

@@ -11,7 +11,7 @@ $nombres="";
       echo "<script language=Javascript> location.href='../index.php'; </script>";
    }
    
-require "../../model/facultad.php";
+require "../../../model/facultad.php";
 $fac=new facultad();
 $id=$_GET['id'];
 $ver=$fac->buscarFacultad($id);

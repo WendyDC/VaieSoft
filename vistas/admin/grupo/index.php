@@ -8,11 +8,11 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/grupo.php";
-require "../../model/facultad.php";            
+require "../../../model/grupo.php";
+require "../../../model/facultad.php";            
 
 $gr = new grupo();
 $grupos=$gr->listaGrupo();

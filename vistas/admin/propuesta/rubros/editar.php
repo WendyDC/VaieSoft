@@ -8,11 +8,11 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/PropuestaRubro.php";
-require "../../../model/contrapartida.php"; 
+require "../../../../model/PropuestaRubro.php";
+require "../../../../model/contrapartida.php"; 
 
 $rubro=new PropuestaRubro();
 $cont = new contrapartida();
@@ -27,7 +27,7 @@ $editar=$rubro->buscarPropuestaRubro($id);
 
             
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../../controller/propuestaRubro.php?opc=2";
+                document.getElementById("form1").action="../../../../controller/propuestaRubro.php?opc=2";
                 document.getElementById("form1").submit();       
               }
         }
@@ -78,7 +78,7 @@ $editar=$rubro->buscarPropuestaRubro($id);
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="../../index.php">Inicio</a>
+            <a href="../../../../index.php">Inicio</a>
         </li>
         <li>
             <a href="../index.php">Propuesta</a>

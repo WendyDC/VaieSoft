@@ -8,11 +8,11 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/contrapartida.php";
-require "../../../model/PropuestaContrapartida.php";
+require "../../../../model/contrapartida.php";
+require "../../../../model/PropuestaContrapartida.php";
 
 $proyContrapartida=new PropuestaContrapartida();
 $cont=new contrapartida();
@@ -67,7 +67,7 @@ $contrapartida=$proyContrapartida->buscarPropuestaContrapartida($id_pru);
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="../../index.php">Inicio</a>
+            <a href="../../../index.php">Inicio</a>
         </li>
         <li>
             <a href="../index.php">Propuesta</a>
@@ -89,7 +89,7 @@ $contrapartida=$proyContrapartida->buscarPropuestaContrapartida($id_pru);
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="form1" id="form1" action="../../../controller/propuestaContrapartida.php?opc=2">
+                <form class="form-inline" role="form" method="post" name="form1" id="form1" action="../../../../controller/propuestaContrapartida.php?opc=2">
                     <div class="form-group">
                       <input name="id_propuesta" type="hidden" id="id_propuesta" value="<?php echo $contrapartida['id_propuesta']?>"/>
                       <input name="id_pru" type="hidden" id="id_pru" value="<?php echo $id_pru?>"/>

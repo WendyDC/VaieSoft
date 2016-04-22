@@ -8,15 +8,15 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    } 
 
-require "../../model/convocatoria.php";
-require "../../model/facultad.php";
-require "../../model/grupo.php";
-require "../../model/Investigador.php";
-require "../../model/evaluador.php";
-require "../../model/Propuesta.php";
+require "../../../model/convocatoria.php";
+require "../../../model/facultad.php";
+require "../../../model/grupo.php";
+require "../../../model/Investigador.php";
+require "../../../model/evaluador.php";
+require "../../../model/Propuesta.php";
 
 $prop=new Propuesta();
 $id=$_GET['id'];
@@ -109,7 +109,7 @@ $evaluadores=$eva->buscarEvaluadores();
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("for").action="../../controller/propuesta.php?opc=5";
+                document.getElementById("for").action="../../../controller/propuesta.php?opc=5";
                 document.getElementById("for").submit();  
      
               }

@@ -7,20 +7,20 @@ $nombres="";
       $nombres=$_SESSION['usuario'];
       ////$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/Propuesta.php";
+require "../../../model/Propuesta.php";
 $prop = new Propuesta();
 $propuestas=$prop->listarPropuesta();
 
-require "../../model/convocatoria.php";
+require "../../../model/convocatoria.php";
 $con = new convocatoria();
 
-require "../../model/grupo.php";
+require "../../../model/grupo.php";
 $gr = new grupo();
 
-require "../../model/facultad.php";
+require "../../../model/facultad.php";
 $facul = new facultad();
 
 

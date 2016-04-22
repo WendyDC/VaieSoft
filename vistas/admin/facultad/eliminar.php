@@ -42,7 +42,7 @@ function funcionNo(){
             </div>
             <div class="box-content">
                 
-            <form class="form-inline" role="form" method="post" id="form1" name="form1" action="../../controller/facultad.php?opc=3">
+            <form class="form-inline" role="form" method="post" id="form1" name="form1" action="../../../controller/facultad.php?opc=3">
               <div class="form-group">
                 <input type="hidden" name="id" id="id" value="<?php echo $id?>" />                
                 <p align="center">Este registro se eliminar&aacute; permanentemente.</p>

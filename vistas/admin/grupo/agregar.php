@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/facultad.php";
+require "../../../model/facultad.php";
 
 $facul = new facultad();
 $facultad=$facul->listaFacultad();
@@ -43,7 +43,7 @@ $facultad=$facul->listaFacultad();
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../controller/grupo.php?opc=1";
+                document.getElementById("form1").action="../../../controller/grupo.php?opc=1";
                 document.getElementById("form1").submit();  
      
               }
