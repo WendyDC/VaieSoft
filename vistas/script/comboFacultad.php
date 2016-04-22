@@ -1,5 +1,5 @@
 <?php
-require "../model/grupo.php";
+require "../../model/grupo.php";
 $grup = new grupo();
 
 $id = $_POST["elegido"];

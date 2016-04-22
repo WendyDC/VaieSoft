@@ -210,10 +210,10 @@ $evaluadores=$eva->buscarEvaluadores();
                               <label class="control-label" for="inputSuccess4">Duraci&oacute;n:</label>
                               <select name="duracion" id="duracion" data-rel="chosen" >
                                 <option value="0">Seleccione</option>
-                                <option <?phpif ($editar['duracion'] == '1 Semestre'){?> selected <?php}?> value="1 Semestre">1 Semestre</option>
-                                <option <?phpif ($editar['duracion'] == '2 Semestres'){?> selected <?php}?> value="2 Semestres">2 Semestres</option>
-                                <option <?phpif ($editar['duracion'] == '3 Semestres'){?> selected <?php}?> value="3 Semestres">3 Semestres</option>
-                                <option <?phpif ($editar['duracion'] == '4 Semestres'){?> selected <?php}?> value="4 Semestres">4 Semestres</option>
+                                <option <?php if ($editar['duracion'] == '1 Semestre'){?> selected <?php }?> value="1 Semestre">1 Semestre</option>
+                                <option <?php if ($editar['duracion'] == '2 Semestres'){?> selected <?php }?> value="2 Semestres">2 Semestres</option>
+                                <option <?php if ($editar['duracion'] == '3 Semestres'){?> selected <?php }?> value="3 Semestres">3 Semestres</option>
+                                <option <?php if ($editar['duracion'] == '4 Semestres'){?> selected <?php }?> value="4 Semestres">4 Semestres</option>
                               </select> <br/><br/>
                               <label for="fechaInicio" id="fechaInicio" >Fecha Inicio:</label>
                               <input name="fechaInicio" class="form-control" type="date" id="fechaInicio" value="<?php echo $editar['fechaInicio']?>" style="width:230px" />

@@ -111,7 +111,7 @@ $evaluadores=$eva->buscarEvaluadores();
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("for").action="../../controller/proyecto.php?opc=1";
+                document.getElementById("for").action="../../../controller/proyecto.php?opc=1";
                 document.getElementById("for").submit();  
      
               }

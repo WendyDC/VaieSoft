@@ -156,11 +156,11 @@ $id_proyecto=$_GET['id'];
             <tr>
                 <td class="center">Consultor&iacute;as Cient&iacute;fico Tecnol&oacute;gicas</td>
                 <?php
-                $cantidad=$con->cantidadConsultoriaProyecto($id_proyecto);                
+                $cantidad= $con->cantidadConsultoriaProyecto($id_proyecto);                
                 $puntos=$cantidad*7;
                 ?>
-                <td class="center"><?php echo $cantidad?></td>
-                <td class="center"><?php echo $puntos?></td>
+                <td class="center"><?php echo $cantidad ?></td>
+                <td class="center"><?php echo $puntos ?></td>
                 <td class="center">        
                 <a href="consultoria/index.php?id=<?php echo $id_proyecto?>">
                    <img alt="agregar" title="agregar" src="../../../img/agregar.gif" height="19" width="17"/>

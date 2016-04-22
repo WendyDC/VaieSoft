@@ -6,7 +6,7 @@ $nombres="";
            //$nombres=$_SESSION['nombre'];
         
         } else {
-          echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+          echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
         }
 
 
@@ -17,10 +17,10 @@ $pdf =new Cezpdf('FOLIO');
 $pdf->selectFont('fonts/courier.afm');
 $pdf->ezSetCmMargins(1,2,2,2);
 
-include '../../../../model/conectar.php';
-include '../../../../model/Proyecto.php';
-include '../../../../model/ProyectoRubro.php';
-include '../../../../model/contrapartida.php';
+include '../../../../../model/conectar.php';
+include '../../../../../model/Proyecto.php';
+include '../../../../../model/ProyectoRubro.php';
+include '../../../../../model/contrapartida.php';
 $proy=new Proyecto();
 $proyRubro=new ProyectoRubro();
 $cont = new contrapartida();
