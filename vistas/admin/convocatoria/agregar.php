@@ -48,7 +48,7 @@ $ano_lectivos=$ano_lectivo->listaAnoLectivo();
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../controller/convocatoria.php?opc=1";
+                document.getElementById("form1").action="../../../controller/convocatoria.php?opc=1";
                 document.getElementById("form1").submit();  
      
               }
