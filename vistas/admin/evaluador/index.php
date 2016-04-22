@@ -12,9 +12,11 @@ $nombres="";
    }
 
 require "../../../model/evaluador.php";
+require "../../../model/usuario.php";
 $eva = new evaluador();
 $evaluadores=$eva->buscarEvaluadores();
 
+$usu = new usuario();
 ?>
     <div>
         <ul class="breadcrumb">
@@ -46,6 +48,7 @@ $evaluadores=$eva->buscarEvaluadores();
             <th>Apellidos</th>
             <th>Tel&eacute;fono</th>
             <th>Email</th>
+            <th>Estado Usuario</th>
             <th>Acciones</th>
         </tr>
         </thead>
@@ -55,13 +58,19 @@ $evaluadores=$eva->buscarEvaluadores();
             $i=1;
             
          foreach($evaluadores as $eva): 
+            $usuario = $usu->verificadoUsuarioIdPersona($eva['id_evaluador']);
             echo '<tr>
                 <td class="center">'.$eva['identificacion'].'</td> 
                 <td class="center">'.$eva['nombre'].'</td> 
                 <td class="center">'.$eva['apellido'].'</td> 
                 <td class="center">'.$eva['telefono'].'</td>
-                <td class="center">'.$eva['email'].'</td>
-                <td class="center">
+                <td class="center">'.$eva['email'].'</td>';
+                if(!$usuario){
+                  echo '<td class="center">Inhabilitado</td>'; 
+                }else{
+                  echo '<td class="center">Habilitado</td>';   
+                }
+                echo '<td class="center">
         
                 <a href="ver.php?id='.$eva['id_evaluador'].'">
                    <img alt="Ver" title="Ver" src="../../img/ver.png" height="19" width="19"/>
@@ -71,8 +80,17 @@ $evaluadores=$eva->buscarEvaluadores();
                 </a>
                 <a href="eliminar.php?id='.$eva['id_evaluador'].'">
                     <img alt="Eliminar" title="Eliminar" src="../../img/eliminar.png" height="18" width="18"/>
-                </a> 
-                </td>
+                </a>';
+            if(!$usuario){
+                echo '<a href="../../../controller/evaluador.php?opc=4&id='.$eva['id_evaluador'].'">
+                    <img alt="Habilitar" title="Habilitar" src="../../img/aprobado.jpg" height="17" width="17"/>
+                </a>';
+            }else{
+                echo '<a href="../../../controller/evaluador.php?opc=5&id='.$eva['id_evaluador'].'">
+                    <img alt="Deshabilitar" title="Deshabilitar" src="../../img/desaprobado.jpg" height="17" width="17"/>
+                </a>';
+            }
+                echo '</td>
             </tr>';
         
             $i=$i+1;

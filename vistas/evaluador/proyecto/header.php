@@ -48,7 +48,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="../../index.php"> <img alt="PROYECTOS FINU" src="../../img/banner2.jpg" />
+            <a class="navbar-brand" href="../index.php"> <img alt="PROYECTOS FINU" src="../../img/banner2.jpg" />
                 </a>           
         </div>
     </div>
@@ -71,12 +71,8 @@
                         </li>
                         <li><a class="ajax-link" href="../propuesta"><i
                                     class="glyphicon glyphicon-book"></i><span> Propuesta</span></a></li>
-                        <li><a class="ajax-link" href="../proyecto"><i
+                        <li><a class="ajax-link" href="index.php"><i
                                     class="glyphicon glyphicon-list-alt"></i><span> Proyecto</span></a></li>
-                       <li><a class="ajax-link" href="index.php"><i
-                                    class="glyphicon glyphicon-user"></i><span> Investigador</span></a></li>
-                        <li><a class="ajax-link" href="../reportes"><i
-                                    class="glyphicon glyphicon-file"></i><span> Reportes</span></a></li>
                         <li><a class="ajax-link" href="../../../controller/cerrarsesion.php"><i
                                     class="glyphicon glyphicon-log-out"></i><span> Cerrar Sesi&oacute;n</span></a></li>
                     </ul>

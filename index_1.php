@@ -1,12 +1,14 @@
 <?php require('header.php'); 
 
+@session_start();
 $nombres="";
 
-  if ( $_SESSION['estado'] == "logeado"  && $_SESSION['rol'] == "investigador" ) {
+
+  if ( $_SESSION['estado'] == "logeado"  && $_SESSION['rol'] == "admin" ) {
       $nombres=$_SESSION['usuario'];
       
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 ?>
 <div>

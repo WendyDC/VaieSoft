@@ -47,7 +47,7 @@ require('head.php');
         }
 
         if (condicion != false) {
-            document.getElementById("form1").action = "../../controller/evaluador.php?opc=1";
+            document.getElementById("form1").action = "controller/evaluador.php?opc=1";
             document.getElementById("form1").submit();
 
         }

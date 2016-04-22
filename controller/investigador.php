@@ -1,4 +1,3 @@
-<?php include 'config.php' ?>
 <?php
 
 /**
@@ -109,7 +108,7 @@ if($opcion==4)//Registrar investigador
     $investigador[5]=$_POST['facultad'];
     $investigador[6]=$_POST['grupo'];
 
-    $cad1 = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
+    $cycad1 = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 10);
     $cad2 = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 6);
     $cad3 = substr(str_shuffle("0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), 0, 6);
 

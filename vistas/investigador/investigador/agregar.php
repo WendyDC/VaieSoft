@@ -7,7 +7,7 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 ?>
     <script type="text/javascript">
@@ -51,7 +51,7 @@ $nombres="";
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../controller/investigador.php?opc=1";
+                document.getElementById("form1").action="../../../controller/investigador.php?opc=1";
                 document.getElementById("form1").submit();  
      
               }

@@ -85,7 +85,7 @@ session_start();
                                     class="glyphicon glyphicon-user"></i><span> Investigador</span></a></li>
                         <li><a class="ajax-link" href="reportes"><i
                                     class="glyphicon glyphicon-file"></i><span> Reportes</span></a></li>
-                        <li><a class="ajax-link" href="../controller/cerrarsesion.php"><i
+                        <li><a class="ajax-link" href="../../controller/cerrarsesion.php"><i
                                     class="glyphicon glyphicon-log-out"></i><span> Cerrar Sesi&oacute;n</span></a></li>
                     </ul>
                 </div>

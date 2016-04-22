@@ -49,8 +49,8 @@ require_once ( 'class.smtp.php');
           $mail->Port = 465;                                 
 
           // credenciales usuario
-          $mail->Username = "semanacyt.ufps";
-          $mail->Password = "vicerrectoria_2";  
+          $mail->Username = "carrascalwendy@gmail.com";
+          $mail->Password = "Gatita_W1993";  
 
           if(!$mail->Send()) {
             return false;

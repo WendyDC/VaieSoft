@@ -1,8 +1,10 @@
 <?php require('header.php'); 
 
+@session_start();
 $nombres="";
 
-  if ( $_SESSION['estado'] == "logeado"  && $_SESSION['rol'] == "investigador" ) {
+
+  if ( $_SESSION['estado'] == "logeado"  && $_SESSION['rol'] == "evaluador" ) {
       $nombres=$_SESSION['usuario'];
       
    } else {

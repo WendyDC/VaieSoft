@@ -3,7 +3,7 @@
 $nombres="";
 
 
-  if ( $_SESSION['estado'] == "logeado" && $_SESSION['rol'] == "admin" ) {
+  if ( $_SESSION['estado'] == "logeado" && $_SESSION['rol'] == "evaluador" ) {
       $nombres=$_SESSION['usuario'];
       ////$cedula=$_SESSION['cedula'];
    } else {
@@ -79,25 +79,10 @@ $facul = new facultad();
                 <td class="center">'.$prop['estado'].'</td>
                 <td class="center">
         
-                <a href="ver.php?id='.$prop['id_propuesta'].'">
-                   <img alt="Ver" title="Ver" src="../../img/ver.png" height="19" width="19"/>
-                </a>
-                <a href="editar.php?id='.$prop['id_propuesta'].'">
-                    <img alt="Editar" title="Editar" src="../../img/editar.gif" height="18" width="18"/>
-                </a>
-                <a href="eliminar.php?id='.$prop['id_propuesta'].'">
-                    <img alt="Eliminar" title="Eliminar" src="../../img/eliminar.png" height="18" width="18"/>
-                </a>
-                <a href="../../../controller/propuestaRubro.php?opc=4&id='.$prop['id_propuesta'].'">
-                    <img alt="Rubros" title="Rubros" src="../../img/rubro.jpg" height="19" width="19"/>
-                </a>
-                <a href="../../../controller/propuesta.php?opc=4&id='.$prop['id_propuesta'].'&e='.$prop['estado'].'">
-                    <img alt="Aprobar" title="Aprobar" src="../../img/aprobado.jpg" height="17" width="17"/>
-                </a>
-                <a href="../../../controller/propuesta.php?opc=6&id='.$prop['id_propuesta'].'&e='.$prop['estado'].'">
-                    <img alt="Desaprobar" title="Desaprobar" src="../../img/desaprobado.jpg" height="17" width="17"/>
-                </a>
-                <a href="../../../controller/propuesta.php?opc=8&id='.$prop['id_propuesta'].'&e='.$prop['estado'].'">
+                <a href="calificar.php?id='.$prop['id_propuesta'].'">
+                    <img alt="Calificar" title="Calificar" src="../../img/editar.gif" height="18" width="18"/>
+                </a>              
+                <a href="../../controller/propuesta.php?opc=8&id='.$prop['id_propuesta'].'&e='.$prop['estado'].'">
                     <img alt="Descargar" title="Descargar" src="../../img/descargar.png" height="17" width="17"/>
                 </a>
                 </td>

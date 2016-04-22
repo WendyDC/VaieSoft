@@ -45,6 +45,31 @@ class evaluador {
  
         return $evaluadores[0];
     }
+    
+    public function buscarEvaluadorIdentificacion2($id)
+    {
+        include 'conectar.php';
+                
+        $resultado = mysql_query('SELECT * FROM evaluador WHERE id_evaluador='.$id);
+        $evaluadores= array();
+         
+        while($evaluador = mysql_fetch_assoc($resultado))
+        {  $evaluadores[] = $evaluador;}
+        
+            if(sizeof($evaluadores)==0)
+                {
+                   $evaluadores['identificacion']=0;
+                   $evaluadores['nombre']=0;
+                   $evaluadores['apellido']=0;
+                   $evaluadores['telefono']=0;
+                   $evaluadores['email']=0;
+                   $evaluadores['urlcvlac']=0;
+                }
+                
+        mysql_close();   
+ 
+        return $evaluadores;
+    }
 public function buscarEvaluadorPorCedula($identificacion)
     {
         include 'conectar.php';
@@ -98,12 +123,13 @@ public function buscarEvaluadores()
     {
         include 'conectar.php';
        
-       $resultado = mysql_query("INSERT INTO `evaluador` (`identificacion`, `nombre`, `apellido`, `telefono`, `email`, `urlcvlac` ) VALUES ('".$evaluador[0]."', '".$evaluador[1]."', '".$evaluador[2]."', '".$evaluador[3]."', '".$evaluador[4]."', '".$evaluador[5]."');");
-                
+        $resultado = mysql_query("INSERT INTO `evaluador` (`identificacion`, `nombre`, `apellido`, `telefono`, `email`, `urlcvlac` ) VALUES ('".$evaluador[0]."', '".$evaluador[1]."', '".$evaluador[2]."', '".$evaluador[3]."', '".$evaluador[4]."', '".$evaluador[5]."');");
+        
+        $id=mysql_insert_id();
         mysql_close();
         
         if($resultado==1)
-            return true;
+            return $id;
         
         return false;
     }
@@ -117,6 +143,20 @@ public function buscarEvaluadores()
         
      return true;
             
+    }
+    
+    public function agregarDisciplinasEvaluador($id_evaluador, $id_plan)
+    {
+        include 'conectar.php';
+       
+        $resultado = mysql_query("INSERT INTO `evaluador_plan_estudio` (`id_evaluador`, `id_plan`) VALUES (".$id_evaluador.", ".$id_plan.");");
+                
+        mysql_close();
+        
+        if($resultado==1)
+            return true;
+        
+        return false;
     }
     
 }

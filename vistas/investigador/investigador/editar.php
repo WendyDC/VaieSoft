@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/Investigador.php";
+require "../../../model/Investigador.php";
 $invedit=new Investigador();
 $id=$_GET['id'];
 $editar=$invedit->buscarInvestigadorIdentificador($id);
@@ -57,7 +57,7 @@ $editar=$invedit->buscarInvestigadorIdentificador($id);
             }
                         
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../controller/investigador.php?opc=2";
+                document.getElementById("form1").action="../../../controller/investigador.php?opc=2";
                 document.getElementById("form1").submit();  
      
               }
