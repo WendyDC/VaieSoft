@@ -8,15 +8,15 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/Propuesta.php";
-require "../../model/convocatoria.php";
-require "../../model/facultad.php";
-require "../../model/grupo.php";
-require "../../model/Investigador.php";
-require "../../model/evaluador.php";
+require "../../../model/Propuesta.php";
+require "../../../model/convocatoria.php";
+require "../../../model/facultad.php";
+require "../../../model/grupo.php";
+require "../../../model/Investigador.php";
+require "../../../model/evaluador.php";
 
 $prop=new Propuesta();
 $id=$_GET['id'];
@@ -134,7 +134,7 @@ $eva = new evaluador();
 
                             if (is_file($ruta))
                             {
-                              echo '<a href="../../controller/propuesta.php?opc=8&id='.$id.'">
+                              echo '<a href="../../../controller/propuesta.php?opc=8&id='.$id.'">
                                        propuesta.pdf <img alt="Descargar" title="Descargar" src="../../img/descargar.png" height="17" width="17"/>
                                     </a>';
                             }

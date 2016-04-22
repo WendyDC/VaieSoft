@@ -42,7 +42,7 @@ if($opcion==1)//Agregar capitulo_libro
       echo "<script> alert (\"No se pudo registrar el capitulo del libro. Ya existe en el Sistema. \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/capitulo_libro/index.php?id=$capitulo_libro[0]\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/capitulo_libro/index.php?id=$capitulo_libro[0]\"; </script>";         
 
     
 die();
@@ -67,7 +67,7 @@ if($opcion==2)//Editar capitulo_libro
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del capitulo.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/capitulo_libro/index.php?id=$capitulo_libro[8]\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/capitulo_libro/index.php?id=$capitulo_libro[8]\"; </script>";
 die();
 }
 
@@ -81,7 +81,7 @@ if($opcion==3)//Eliminar capitulo_libro
     else
       echo "<script> alert (\"Error, no se permite eliminar la informacion del capitulo.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/capitulo_libro/index.php?id=$id_proyecto\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/capitulo_libro/index.php?id=$id_proyecto\"; </script>";
 die();
 }
 

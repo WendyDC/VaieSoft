@@ -49,7 +49,7 @@ if($opcion==1)//Agregar articulo
       echo "<script> alert (\"No se pudo registrar el articulo. Ya existe en el Sistema. \"); </script>";
       
     }
-    echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/articulo/index.php?id=$articulo[0]\"; </script>";         
+    echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/articulo/index.php?id=$articulo[0]\"; </script>";         
 
     
 die();
@@ -80,7 +80,7 @@ if($opcion==2)//Editar articulo
     else
       echo "<script> alert (\"Error. No se permite actualizar la informacion del articulo.\"); </script>";
     
-echo "<script language=Javascript> location.href=\"../admin/proyecto/producto/articulo/index.php?id=$articulo[15]\"; </script>";
+echo "<script language=Javascript> location.href=\"../vistas/admin/proyecto/producto/articulo/index.php?id=$articulo[15]\"; </script>";
 die();
 }
 

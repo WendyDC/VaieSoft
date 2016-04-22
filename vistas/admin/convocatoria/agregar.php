@@ -7,10 +7,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/ano_lectivo.php";
+require "../../../model/ano_lectivo.php";
 $ano_lectivo = new ano_lectivo();
 $ano_lectivos=$ano_lectivo->listaAnoLectivo();
 ?>

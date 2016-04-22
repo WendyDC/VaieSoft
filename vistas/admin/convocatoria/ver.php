@@ -9,10 +9,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/convocatoria.php";
+require "../../../model/convocatoria.php";
 $conv=new convocatoria();
 $id=$_GET['id'];
 $ver=$conv->buscarConvocatoria($id);

@@ -8,10 +8,10 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
 
-require "../../../model/contrapartida.php";
+require "../../../../model/contrapartida.php";
 
 $cont=new contrapartida();
 $id_propuesta=$_GET['id'];
@@ -31,7 +31,7 @@ $contrapartida=$cont->listaContrapartidaDisponibles($id_propuesta);
             }
                
             if( condicion!=false ) {    
-                document.getElementById("form1").action="../../../controller/propuestaRubro.php?opc=5";
+                document.getElementById("form1").action="../../../../controller/propuestaRubro.php?opc=5";
                 document.getElementById("form1").submit();  
      
               }
@@ -83,7 +83,7 @@ $contrapartida=$cont->listaContrapartidaDisponibles($id_propuesta);
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="../../index.php">Inicio</a>
+            <a href="../../../../index.php">Inicio</a>
         </li>
         <li>
             <a href="../index.php">Propuesta</a>

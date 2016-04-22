@@ -8,14 +8,14 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/convocatoria.php";
-require "../../model/facultad.php";
-require "../../model/grupo.php";
-require "../../model/Investigador.php";
-require "../../model/evaluador.php";
+require "../../../model/convocatoria.php";
+require "../../../model/facultad.php";
+require "../../../model/grupo.php";
+require "../../../model/Investigador.php";
+require "../../../model/evaluador.php";
 
 $conv = new convocatoria();
 $convocatorias=$conv->listaConvocatoriasActivas();
@@ -214,7 +214,7 @@ $evaluadores=$eva->buscarEvaluadores();
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../controller/propuesta.php?opc=1" onSubmit="return validar(this)" enctype="multipart/form-data">
+                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../controller/propuesta.php?opc=1" onSubmit="return validar(this)" enctype="multipart/form-data">
                     <div class="form-group">
                         <br/>
                               <label class="control-label" for="inputSuccess4">Convocatoria: <span title="Campo Obligatorio" style="color: red; font-size: 12pt;">*</span></label>

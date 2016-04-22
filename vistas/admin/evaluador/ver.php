@@ -9,7 +9,7 @@ $nombres="";
       ////$nombres=$_SESSION['nombre'];
       ////$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
 require "../../../model/evaluador.php";
@@ -68,7 +68,7 @@ $ver=$eva->buscarEvaluadorIdentificacion($id);
 
 </div><!--/row-->
 
-</div><!--/row-->
+
 
 <?php require('footer.php'); ?>
 

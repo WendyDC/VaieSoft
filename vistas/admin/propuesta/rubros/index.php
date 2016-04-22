@@ -8,13 +8,13 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../../index.php'; </script>";
    }
-require "../../../model/Propuesta.php";
-require "../../../model/PropuestaRubro.php";
-require "../../../model/PropuestaContrapartida.php";
-require "../../../model/contrapartida.php";
-require "../../../model/movimientoRubro.php";
+require "../../../../model/Propuesta.php";
+require "../../../../model/PropuestaRubro.php";
+require "../../../../model/PropuestaContrapartida.php";
+require "../../../../model/contrapartida.php";
+require "../../../../model/movimientoRubro.php";
 
 $proy=new Propuesta();
 $proyRubro=new PropuestaRubro();
@@ -31,7 +31,7 @@ $cont = new contrapartida();
 <div>
     <ul class="breadcrumb">
         <li>
-            <a href="../../index.php">Inicio</a>
+            <a href="../../../index.php">Inicio</a>
         </li>
         <li>
             <a href="../index.php">Propuesta</a>

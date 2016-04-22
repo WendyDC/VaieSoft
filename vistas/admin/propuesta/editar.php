@@ -8,15 +8,15 @@ $nombres="";
       //$nombres=$_SESSION['nombre'];
       //$cedula=$_SESSION['cedula'];
    } else {
-      echo "<script language=Javascript> location.href='../../index.php'; </script>";
+      echo "<script language=Javascript> location.href='../../../index.php'; </script>";
    }
 
-require "../../model/Propuesta.php";
-require "../../model/convocatoria.php";
-require "../../model/facultad.php";
-require "../../model/grupo.php";
-require "../../model/Investigador.php";
-require "../../model/evaluador.php";
+require "../../../model/Propuesta.php";
+require "../../../model/convocatoria.php";
+require "../../../model/facultad.php";
+require "../../../model/grupo.php";
+require "../../../model/Investigador.php";
+require "../../../model/evaluador.php";
 
 $prop=new Propuesta();
 $id=$_GET['id'];
@@ -197,7 +197,7 @@ $evaluadores=$eva->buscarEvaluadores();
             </div>
             <div class="box-content">
                 
-                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../controller/propuesta.php?opc=2" onSubmit="return validar(this)" enctype="multipart/form-data">
+                <form class="form-inline" role="form" method="post" name="for" id="for" action="../../../controller/propuesta.php?opc=2" onSubmit="return validar(this)" enctype="multipart/form-data">
                     <div class="form-group">
                         <br/>
                               <input name="id_propuesta" type="hidden" id="id_propuesta" value="<?php echo $editar['id_propuesta']?>"/>
@@ -378,7 +378,7 @@ $evaluadores=$eva->buscarEvaluadores();
                             if (is_file($ruta))
                             {
                               echo '<input type="hidden" id="pdf" name="pdf" value="true"/>
-                                    <a href="../../controller/propuesta.php?opc=8&id='.$id.'">
+                                    <a href="../../../controller/propuesta.php?opc=8&id='.$id.'">
                                        propuesta.pdf <img alt="Descargar" title="Descargar" src="../../img/descargar.png" height="17" width="17"/>
                                     </a>
                                     <br>
